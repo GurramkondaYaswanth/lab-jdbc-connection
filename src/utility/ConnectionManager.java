@@ -10,9 +10,9 @@ public class ConnectionManager {
 	public static Connection getConnection() {
 		//establising connection
 		Connection con = null;
-		Properties properties;
+		 
 		try {
-			properties = loadPropertiesFile() ;  //properties
+		Properties	properties = loadPropertiesFile() ;  //properties
 		
 		//required properties out of properties object
 	    String driver = properties.getProperty("driver");
